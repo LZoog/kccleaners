@@ -1,0 +1,185 @@
+body {
+  font-size: 1.8em;
+  max-width: 100%;
+  overflow-x: hidden; }
+
+#carousel {
+  border-bottom: 1px solid white; }
+
+.logo {
+  height: 30px;
+  width: auto; }
+
+.navbar {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #850028; }
+  .navbar span {
+    font-size: .65em; }
+  .navbar li {
+    text-align: center; }
+    .navbar li:not(:last-child) {
+      margin-right: 5px; }
+    .navbar li .home {
+      font-size: 1em;
+      position: relative;
+      top: 10px; }
+
+header {
+  margin-bottom: 45px; }
+
+.top-bottom-pad {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.neg-margin {
+  margin-top: -110px; }
+
+.container-fluid {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.carimg1 {
+  background: url(../img/car1-1.jpg) no-repeat center center; }
+
+.carimg2 {
+  background: url(../img/car2.jpg) no-repeat center center; }
+
+.carimg3 {
+  background: url(../img/car3-1.jpg) no-repeat center center; }
+
+.carousel-inner .item {
+  height: 275px;
+  background-size: cover; }
+
+#carousel-text {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -15%); }
+
+#top-wrapper {
+  position: relative; }
+
+#we-deliver {
+  border-radius: 3px;
+  width: 100%;
+  padding: 0 15px 5px;
+  background-color: white; }
+  #we-deliver h1 {
+    font-size: 2em; }
+
+.topimgs {
+  height: 200px;
+  background-size: 120% !important;
+  border: 1px solid white;
+  box-sizing: border-box; }
+  .topimgs h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+    top: 25%;
+    transform: rotate(-25deg);
+    font-size: 2em; }
+
+a:nth-child(1) .topimgs {
+  background: url(../img/dc-color.jpg) no-repeat center 5%; }
+a:nth-child(2) .topimgs {
+  background: url(../img/laundry-color.jpg) no-repeat center 5%; }
+a:nth-child(3) .topimgs {
+  background: url(../img/wedding-color.jpg) no-repeat center 5%; }
+a:nth-child(4) .topimgs {
+  background: url(../img/household-color.jpg) no-repeat center 5%; }
+
+#choose-us-bg {
+  padding: 70px 5%;
+  background: url(../img/chooseus.jpg) no-repeat center center;
+  background-size: cover; }
+  #choose-us-bg #choose-us {
+    padding: 20px;
+    background: url(../img/trans-bg.png); }
+    #choose-us-bg #choose-us h1 {
+      opacity: 1;
+      color: black; }
+
+#delivery-text {
+  color: white;
+  font-size: 3em;
+  margin: auto;
+  display: table;
+  position: relative;
+  top: 150px; }
+
+#delivery {
+  background: url(http://placekitten.com/2000/300) no-repeat bottom center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 75px; }
+
+.f-right {
+  margin: 0 auto; }
+
+#welcome-img {
+  margin: 0 auto; }
+
+#equipment {
+  background: url(http://placekitten.com/2000/500) no-repeat bottom center;
+  width: 100%;
+  height: 500px; }
+
+footer {
+  margin-top: 25px;
+  margin-right: 25px;
+  padding: 20px;
+  color: #530019;
+  background-color: #f6f6f6;
+  border-top: 1px solid #006739; }
+
+@media all and (min-width: 768px) {
+  .carousel-inner .item {
+    height: 525px;
+    width: 100%; }
+
+  .logo {
+    height: 50px;
+    width: auto; }
+
+  button {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: none;
+    font-size: 1.3em; }
+
+  #we-deliver {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -45px;
+    z-index: 2; }
+
+  .topimgs {
+    padding: 5px;
+    height: 300px; }
+    .topimgs h1 {
+      top: 33%;
+      font-size: 3em;
+      line-height: 1em; }
+
+  .f-right {
+    float: right; }
+
+  #choose-us-bg {
+    padding: 70px 20%; } }
+@media all and (min-width: 992px) {
+  .topimgs h1 {
+    top: 25%; } }
+@media all and (min-width: 1200px) {
+  .topimgs h1 {
+    top: 30%; } }
+
+/*# sourceMappingURL=styles.css.map */
