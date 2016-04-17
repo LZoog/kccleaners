@@ -1,10 +1,20 @@
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Merriweather', sans-serif;
+  color: #180F1C; }
+
 body {
-  font-size: 1.8em;
-  max-width: 100%;
+  background: #fbf5f3;
+  font: 1.8em 'Lato', serif;
   overflow-x: hidden; }
 
+a {
+  color: #288CBA; }
+  a:hover {
+    text-decoration: none;
+    color: #850028; }
+
 #carousel {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #fbf5f3; }
 
 .logo {
   height: 30px;
@@ -31,25 +41,19 @@ header {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.neg-margin {
-  margin-top: -110px; }
-
 .container-fluid {
   padding-left: 10px;
   padding-right: 10px; }
 
-.carimg1 {
-  background: url(../img/car1-1.jpg) no-repeat center center; }
-
-.carimg2 {
-  background: url(../img/car2.jpg) no-repeat center center; }
-
-.carimg3 {
-  background: url(../img/car3-1.jpg) no-repeat center center; }
-
 .carousel-inner .item {
   height: 275px;
   background-size: cover; }
+  .carousel-inner .item:nth-of-type(1) {
+    background: url(../img/car1-1.jpg) no-repeat center center; }
+  .carousel-inner .item:nth-of-type(2) {
+    background: url(../img/car2.jpg) no-repeat center center; }
+  .carousel-inner .item:nth-of-type(3) {
+    background: url(../img/car3-1.jpg) no-repeat center center; }
 
 #carousel-text {
   z-index: 2;
@@ -58,38 +62,42 @@ header {
   top: 15%;
   transform: translate(-50%, -15%); }
 
-#top-wrapper {
+#home-top-wrapper {
   position: relative; }
 
 #we-deliver {
-  border-radius: 3px;
+  border-radius: 4px;
   width: 100%;
-  padding: 0 15px 5px;
-  background-color: white; }
-  #we-deliver h1 {
+  padding: 0 18px 5px;
+  background-color: #fbf5f3; }
+  #we-deliver a {
     font-size: 2em; }
 
-.topimgs {
+.home-dlwh {
   height: 200px;
   background-size: 120% !important;
-  border: 1px solid white;
+  border: 1px solid #fbf5f3;
   box-sizing: border-box; }
-  .topimgs h1 {
-    color: white;
+  .home-dlwh h1 {
+    color: #fbf5f3;
     text-shadow: 1px 1px 2px black;
     position: relative;
     top: 25%;
     transform: rotate(-25deg);
     font-size: 2em; }
 
-a:nth-child(1) .topimgs {
-  background: url(../img/dc-color.jpg) no-repeat center 5%; }
-a:nth-child(2) .topimgs {
-  background: url(../img/laundry-color.jpg) no-repeat center 5%; }
-a:nth-child(3) .topimgs {
-  background: url(../img/wedding-color.jpg) no-repeat center 5%; }
-a:nth-child(4) .topimgs {
-  background: url(../img/household-color.jpg) no-repeat center 5%; }
+a:nth-child(1) .home-dlwh {
+  box-shadow: inset 0 0 0 1000px rgba(17, 85, 55, 0.4);
+  background: url("../img/dc.jpg") no-repeat center 5%; }
+a:nth-child(2) .home-dlwh {
+  box-shadow: inset 0 0 0 1000px rgba(17, 85, 55, 0.4);
+  background: url("../img/laundry.jpg") no-repeat center 5%; }
+a:nth-child(3) .home-dlwh {
+  box-shadow: inset 0 0 0 1000px rgba(17, 85, 55, 0.4);
+  background: url("../img/wedding.jpg") no-repeat center 5%; }
+a:nth-child(4) .home-dlwh {
+  box-shadow: inset 0 0 0 1000px rgba(17, 85, 55, 0.5);
+  background: url("../img/household.jpg") no-repeat center 5%; }
 
 #choose-us-bg {
   padding: 70px 5%;
@@ -99,21 +107,24 @@ a:nth-child(4) .topimgs {
     padding: 20px;
     background: url(../img/trans-bg.png); }
     #choose-us-bg #choose-us h1 {
-      opacity: 1;
-      color: black; }
+      opacity: 1; }
 
 #delivery-text {
-  color: white;
-  font-size: 3em;
+  color: #fbf5f3;
+  font-size: 2.5em;
   margin: auto;
   display: table;
   position: relative;
+  padding: 50px;
   top: 150px; }
 
 #delivery {
-  background: url(http://placekitten.com/2000/300) no-repeat bottom center;
-  width: 100%;
+  background: url(../img/services-delivery.jpg) no-repeat bottom center;
   height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
   margin-bottom: 75px; }
 
 .f-right {
@@ -131,9 +142,9 @@ footer {
   margin-top: 25px;
   margin-right: 25px;
   padding: 20px;
-  color: #530019;
-  background-color: #f6f6f6;
-  border-top: 1px solid #006739; }
+  color: #fbf5f3;
+  background-color: #180F1C;
+  border-top: 2px solid #850028; }
 
 @media all and (min-width: 768px) {
   .carousel-inner .item {
@@ -150,36 +161,37 @@ footer {
     position: relative;
     left: 30%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid #180F1C;
     background: none;
     font-size: 1.3em; }
 
   #we-deliver {
     width: auto;
+    padding: 15px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     bottom: -45px;
     z-index: 2; }
 
-  .topimgs {
+  .home-dlwh {
     padding: 5px;
     height: 300px; }
-    .topimgs h1 {
+    .home-dlwh h1 {
       top: 33%;
       font-size: 3em;
       line-height: 1em; }
 
-  .f-right {
-    float: right; }
-
   #choose-us-bg {
     padding: 70px 20%; } }
 @media all and (min-width: 992px) {
-  .topimgs h1 {
-    top: 25%; } }
+  .home-dlwh h1 {
+    top: 25%; }
+
+  .f-right {
+    float: right; } }
 @media all and (min-width: 1200px) {
-  .topimgs h1 {
+  .home-dlwh h1 {
     top: 30%; } }
 
 /*# sourceMappingURL=styles.css.map */

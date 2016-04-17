@@ -1,6 +1,11 @@
-$green: #006739;
+$green: #115537;
 $maroon: #530019;
 $light-maroon: #850028;
+$off-white: #fbf5f3;
+$blue: #288CBA;
+$mauve: #5E4955;
+$gold: #E5D347;
+$black-purple: #180F1C;
 
 @mixin centered($left, $top) {
   left: $left;
@@ -8,14 +13,28 @@ $light-maroon: #850028;
   transform: translate(-$left, -$top);
 }
 
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Merriweather', sans-serif;
+  color: $black-purple;
+}
+
 body {
-  font-size: 1.8em;
-  max-width: 100%;
+  background: $off-white;
+  font: 1.8em 'Lato', serif;
   overflow-x: hidden;
 }
 
+a {
+  color: $blue;
+
+  &:hover {
+    text-decoration: none;
+    color: $light-maroon;
+  }
+}
+
 #carousel {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $off-white;
 }
 
 .logo {
@@ -56,30 +75,24 @@ header {
   //padding & not margin because it can be the first div
 }
 
-.neg-margin {
-  margin-top: -110px;
-}
-
 .container-fluid {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.carimg1 {
-  background: url(../img/car1-1.jpg)  no-repeat center center;
-}
-
-.carimg2 {
-  background: url(../img/car2.jpg)  no-repeat center center;
-}
-
-.carimg3 {
-  background: url(../img/car3-1.jpg)  no-repeat center center;
-}
-
 .carousel-inner .item {
   height: 275px;
   background-size: cover;
+
+  &:nth-of-type(1) {
+    background: url(../img/car1-1.jpg)  no-repeat center center;
+  }
+  &:nth-of-type(2) {
+    background: url(../img/car2.jpg)  no-repeat center center;
+  }
+  &:nth-of-type(3) {
+    background: url(../img/car3-1.jpg)  no-repeat center center;
+  }
 }
 
 #carousel-text {
@@ -88,29 +101,29 @@ header {
   @include centered(50%, 15%);
 }
 
-#top-wrapper {
+#home-top-wrapper {
   position: relative;
 }
 
 #we-deliver {
-  border-radius: 3px;
+  border-radius: 4px;
   width: 100%;
-  padding: 0 15px 5px;
-  background-color: white;
+  padding: 0 18px 5px;
+  background-color: $off-white;
 
-  h1 {
+  a {
     font-size: 2em;
   }
 }
 
-.topimgs {
+.home-dlwh {
   height: 200px;
   background-size: 120%!important;
-  border: 1px solid white;
+  border: 1px solid $off-white;
   box-sizing: border-box;
 
   h1 {
-    color: white;
+    color: $off-white;
     text-shadow: 1px 1px 2px black;
     position: relative;
     top: 25%;
@@ -119,21 +132,32 @@ header {
   }
 }
 
+@mixin divbg($url, $r, $g, $b, $a) {
+  box-shadow: inset 0 0 0 1000px rgba($r,$g,$b,$a);
+  background: url($url) no-repeat center 5%;
+}
+
+
 a {
-  &:nth-child(1) .topimgs {
-    background: url(../img/dc-color.jpg) no-repeat center 5%;
+  &:nth-child(1) .home-dlwh {
+    //green: @include divbg('../img/dc.jpg', 17, 85, 55, .5);
+    @include divbg('../img/dc.jpg', 17, 85, 55, .4);
+
   }
 
-  &:nth-child(2) .topimgs {
-    background: url(../img/laundry-color.jpg) no-repeat center 5%;
+  &:nth-child(2) .home-dlwh {
+    //yellow: @include divbg('../img/laundry.jpg', 299, 211, 71, .4);
+    //black-purple@include divbg('../img/laundry.jpg', 24, 15, 28, .6);
+    @include divbg('../img/laundry.jpg', 17, 85, 55, .4);
   }
 
-  &:nth-child(3) .topimgs {
-    background: url(../img/wedding-color.jpg) no-repeat center 5%;
+  &:nth-child(3) .home-dlwh {
+    @include divbg('../img/wedding.jpg', 17, 85, 55, .4);
   }
 
-  &:nth-child(4) .topimgs {
-    background: url(../img/household-color.jpg) no-repeat center 5%;
+  &:nth-child(4) .home-dlwh {
+    //maroon: @include divbg('../img/household.jpg', 83, 0, 25, .5);
+    @include divbg('../img/household.jpg', 17, 85, 55, .5);
   }
 }
 
@@ -148,24 +172,28 @@ a {
 
     h1 {
       opacity: 1;
-      color: black;
     }
   }
 }
 
 #delivery-text {
-  color: white;
-  font-size: 3em;
+  color: $off-white;
+  font-size: 2.5em;
   margin: auto;
   display: table;
   position: relative;
+  padding: 50px;
   top: 150px;
 }
 
 #delivery {
-  background: url(http://placekitten.com/2000/300) no-repeat bottom center;
-  width: 100%;
+  background: url(../img/services-delivery.jpg) no-repeat bottom center;
+
   height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
   margin-bottom: 75px;
 }
 
@@ -188,9 +216,9 @@ footer {
   margin-top: 25px;
   margin-right: 25px;
   padding: 20px;
-  color: $maroon;
-  background-color: #f6f6f6;
-  border-top: 1px solid $green;
+  color: $off-white;
+  background-color: $black-purple;
+  border-top: 2px solid $light-maroon;
 }
 
 @media all and (min-width: 768px) {
@@ -210,13 +238,14 @@ footer {
     position: relative;
     left: 30%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid $black-purple;
     background: none;
     font-size: 1.3em;
   }
 
   #we-deliver {
     width: auto;
+    padding:15px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -224,7 +253,7 @@ footer {
     z-index: 2;
   }
 
-  .topimgs {
+  .home-dlwh {
     padding: 5px;
     height: 300px;
 
@@ -235,25 +264,24 @@ footer {
     }
   }
 
-  .f-right {
-    float: right;
-  }
-
   #choose-us-bg {
     padding: 70px 20%;
   }
 }
 
 @media all and (min-width: 992px) {
-  .topimgs {
+  .home-dlwh {
     h1 {
       top: 25%;
     }
   }
+  .f-right {
+    float: right;
+  }
 }
 
 @media all and (min-width: 1200px) {
-  .topimgs {
+  .home-dlwh {
     h1 {
       top: 30%;
     }
