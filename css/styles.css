@@ -13,9 +13,6 @@ a {
     text-decoration: none;
     color: #850028; }
 
-#carousel {
-  border-bottom: 1px solid #efefef; }
-
 .navbar {
   background-image: url("../img/header-bg.png");
   box-shadow: 0px 0px 1px #180F1C;
@@ -62,22 +59,42 @@ header {
   padding-left: 10px;
   padding-right: 10px; }
 
+#carousel {
+  border-bottom: 1px solid #efefef; }
+
+.right.carousel-control, .left.carousel-control {
+  display: none; }
+
 .carousel-inner .item {
-  height: 275px;
-  background-size: cover; }
+  background-size: cover !important; }
   .carousel-inner .item:nth-of-type(1) {
-    background: url(../img/car1-1.jpg) no-repeat center center; }
+    background: url(../img/car1-1.jpg) no-repeat; }
   .carousel-inner .item:nth-of-type(2) {
-    background: url(../img/car2.jpg) no-repeat center center; }
+    background: url(../img/car2.jpg) no-repeat; }
   .carousel-inner .item:nth-of-type(3) {
-    background: url(../img/car3-1.jpg) no-repeat center center; }
+    background: url(../img/car3-1.jpg) no-repeat; }
 
 #carousel-text {
   z-index: 2;
   position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%, -15%); }
+  background: url("../img/trans-bg.png");
+  height: calc(100% - 29px);
+  display: inline-block;
+  width: 40%;
+  box-shadow: 1px 1px 10px -2px #180F1C; }
+  #carousel-text > * {
+    margin-left: 40%; }
+  #carousel-text h2 {
+    font-size: 2.5em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 160px;
+    margin-bottom: -10px; }
+  #carousel-text h2, #carousel-text h3 {
+    padding-right: 60px;
+    text-align: right; }
+  #carousel-text p {
+    padding: 30px; }
 
 #home-top-wrapper {
   position: relative;
@@ -166,12 +183,8 @@ footer {
 
 @media all and (min-width: 768px) {
   .carousel-inner .item {
-    height: 525px;
+    height: 600px;
     width: 100%; }
-
-  .logo {
-    height: 50px;
-    width: auto; }
 
   button {
     padding: 10px;
