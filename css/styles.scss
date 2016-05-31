@@ -1,7 +1,7 @@
 $green: #115537;
 $maroon: #530019;
 $light-maroon: #850028;
-$off-white: #fbf5f3;
+$off-white: #efefef;
 $blue: #288CBA;
 $mauve: #5E4955;
 $gold: #E5D347;
@@ -42,12 +42,42 @@ a {
   width: auto;
 }
 
+.navbar-default {
+  background-color: transparent;
+}
+
 .navbar {
-  background-color: #f6f6f6;
-  border-bottom: 1px solid $light-maroon;
+  background-image: url('../img/header-bg.png');
+  border-bottom: 1px solid $maroon;
+  height: 87px;
+
+  a:not(.navbar-brand) {
+    height: 86px;
+  }
+
+  li:hover a span {
+    color: $green!important;
+  }
 
   span {
-    font-size: .65em;
+    position: relative;
+    top: 5px;
+    color: $black-purple;
+    text-transform: uppercase;
+    font-size: .85em;
+    text-shadow: 0px 0px 1px white;
+    text-shadow: 1px 1px 1px white;
+    text-shadow: 0px 0px 2px white;
+  }
+
+  .active a span {
+    color: $green;
+  }
+
+  span.more {
+    text-transform: none;
+    font-size: .8em;
+    top: 0px;
   }
 
   li {
@@ -58,11 +88,18 @@ a {
     }
 
     .home {
-      font-size: 1em;
       position: relative;
-      top: 10px;
+      top: 15px;
     }
   }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+  color: $green;
+  // background-color: rgba(200,200,200, .6);
+  // border-left: 1px solid $black-purple;
+  // border-right: 1px solid $black-purple;
 }
 
 header {
@@ -103,6 +140,7 @@ header {
 
 #home-top-wrapper {
   position: relative;
+  top: 42px;
 }
 
 #we-deliver {

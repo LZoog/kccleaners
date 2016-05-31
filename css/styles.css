@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, strong {
   color: #180F1C; }
 
 body {
-  background: #fbf5f3;
+  background: #efefef;
   font: 1.8em 'Lato', serif;
   overflow-x: hidden; }
 
@@ -14,25 +14,49 @@ a {
     color: #850028; }
 
 #carousel {
-  border-bottom: 1px solid #fbf5f3; }
+  border-bottom: 1px solid #efefef; }
 
 .logo {
   height: 30px;
   width: auto; }
 
+.navbar-default {
+  background-color: transparent; }
+
 .navbar {
-  background-color: #f6f6f6;
-  border-bottom: 1px solid #850028; }
+  background-image: url("../img/header-bg.png");
+  border-bottom: 1px solid #530019;
+  height: 87px; }
+  .navbar a:not(.navbar-brand) {
+    height: 86px; }
+  .navbar li:hover a span {
+    color: #115537 !important; }
   .navbar span {
-    font-size: .65em; }
+    position: relative;
+    top: 5px;
+    color: #180F1C;
+    text-transform: uppercase;
+    font-size: .85em;
+    text-shadow: 0px 0px 1px white;
+    text-shadow: 1px 1px 1px white;
+    text-shadow: 0px 0px 2px white; }
+  .navbar .active a span {
+    color: #115537; }
+  .navbar span.more {
+    text-transform: none;
+    font-size: .8em;
+    top: 0px; }
   .navbar li {
     text-align: center; }
     .navbar li:not(:last-child) {
       margin-right: 5px; }
     .navbar li .home {
-      font-size: 1em;
       position: relative;
-      top: 10px; }
+      top: 15px; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #115537; }
 
 header {
   margin-bottom: 45px; }
@@ -63,23 +87,24 @@ header {
   transform: translate(-50%, -15%); }
 
 #home-top-wrapper {
-  position: relative; }
+  position: relative;
+  top: 42px; }
 
 #we-deliver {
   border-radius: 4px;
   width: 100%;
   padding: 0 18px 5px;
-  background-color: #fbf5f3; }
+  background-color: #efefef; }
   #we-deliver a {
     font-size: 2em; }
 
 .home-dlwh {
   height: 200px;
   background-size: 120% !important;
-  border: 1px solid #fbf5f3;
+  border: 1px solid #efefef;
   box-sizing: border-box; }
   .home-dlwh h1 {
-    color: #fbf5f3;
+    color: #efefef;
     text-shadow: 1px 1px 2px black;
     position: relative;
     top: 25%;
@@ -110,7 +135,7 @@ a:nth-child(4) .home-dlwh {
       opacity: 1; }
 
 #delivery-text {
-  color: #fbf5f3;
+  color: #efefef;
   font-size: 2.5em;
   margin: auto;
   display: table;
@@ -142,7 +167,7 @@ footer {
   margin-top: 25px;
   margin-right: 25px;
   padding: 20px;
-  color: #fbf5f3;
+  color: #efefef;
   background-color: #180F1C;
   border-top: 2px solid #850028; }
 
