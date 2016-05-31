@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, strong {
   color: #180F1C; }
 
 body {
-  background: #efefef;
+  background: white;
   font: 1.8em 'Lato', serif;
   overflow-x: hidden; }
 
@@ -16,24 +16,18 @@ a {
 #carousel {
   border-bottom: 1px solid #efefef; }
 
-.logo {
-  height: 30px;
-  width: auto; }
-
-.navbar-default {
-  background-color: transparent; }
-
 .navbar {
   background-image: url("../img/header-bg.png");
-  border-bottom: 1px solid #530019;
-  height: 87px; }
-  .navbar a:not(.navbar-brand) {
-    height: 86px; }
-  .navbar li:hover a span {
-    color: #115537 !important; }
-  .navbar span {
+  box-shadow: 0px 0px 1px #180F1C;
+  height: auto; }
+  .navbar-default {
+    background-color: transparent; }
+  .navbar-brand {
     position: relative;
-    top: 5px;
+    top: -7px; }
+  .navbar li:hover a span {
+    color: #115537; }
+  .navbar span {
     color: #180F1C;
     text-transform: uppercase;
     font-size: .85em;
@@ -44,15 +38,14 @@ a {
     color: #115537; }
   .navbar span.more {
     text-transform: none;
-    font-size: .8em;
-    top: 0px; }
+    font-size: .8em; }
   .navbar li {
     text-align: center; }
     .navbar li:not(:last-child) {
-      margin-right: 5px; }
+      margin-right: 20px; }
     .navbar li .home {
       position: relative;
-      top: 15px; }
+      top: 10px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background-color: transparent;
@@ -88,7 +81,7 @@ header {
 
 #home-top-wrapper {
   position: relative;
-  top: 42px; }
+  top: 30px; }
 
 #we-deliver {
   border-radius: 4px;
