@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6, strong {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #180F1C; }
 
 body {
@@ -95,27 +95,22 @@ a {
     padding: 30px 70px; }
 
 /* QUICK SERVICES BAR */
-#we-deliver {
-  border-radius: 4px;
-  padding: 0 18px 5px;
-  background-color: #efefef;
-  position: relative;
-  font-size: 2em; }
-
-.no-pad {
-  padding: 0; }
-
 .home-services {
-  padding: 55px 100px 20px;
-  background-color: #850028; }
+  padding: 30px 15px;
+  max-width: 1200px; }
+  .home-services hr {
+    width: 80px;
+    border: 2px solid #850028;
+    margin: 30px auto; }
   .home-services h2 {
-    color: white; }
+    font-weight: normal; }
 
 .home-service img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 200px; }
+  background-color: #850028;
+  width: 80px;
+  height: auto; }
+  .home-service img:hover {
+    background-color: #115537; }
 
 #choose-us-bg {
   padding: 70px 5%;
