@@ -8,12 +8,13 @@
 	<meta name="keywords" content="keywords">
 	<title>KC Cleaners | Where Quality is Our Specialty</title>
 	<!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
-	<link rel="apple-touch-icon-precomposed" href="img/favicon-apple.ico">
-	<link rel="icon" href="img/favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicon-apple.ico" />
+	<link rel="icon" href="img/favicon.png" />
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 <body>
   <header>
@@ -45,11 +46,14 @@
 
     <div id="carousel" class="carousel slide" data-ride="carousel">
       <div id="carousel-text" class="text-center">
-        <img src="img/hanger.png" id="hanger" alt="hanger"/>
-        <h2>QUALITY</h2>
-        <h3>is our speciality</h3>
-        <p>Marshmallow pastry jelly chocolate bar. Muffin pastry sesame snaps pie cake cake topping jujubes. Cupcake pie pie candy dragée brownie wafer.</p>
-        <button type="button">We Deliver!</button>
+        <div class="wow fadeInDown">
+          <img src="img/hanger.png" id="hanger" alt="hanger"/>
+          <h2>QUALITY</h2>
+          <h3>is our speciality</h3>
+          <hr />
+          <p>Marshmallow pastry jelly chocolate bar. Muffin pastry sesame snaps pie cake cake topping jujubes. Cupcake pie pie candy dragée brownie wafer.</p>
+          <button type="button">We Deliver!</button>
+        </div>
       </div>
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -65,36 +69,42 @@
       </div>
     </div>
 
-    <div class="container text-center home-services">
+    <div class="container-fluid text-center home-services">
       <div class="row">
         <div class="col-xs-12">
-          <h1>Some of Our Services</h1>
+          <h1>Our Services Include ...</h1>
           <hr />
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-6 col-sm-3 home-service">
+        <div class="col-xs-6 col-sm-offset-1 col-sm-2 home-service">
           <a href="services#dc">
-            <img src="img/dc.png" alt="Dry Cleaning">
+            <img src="img/dc.png" class="wow rotateIn" alt="Dry Cleaning">
             <h2>Dry Cleaning</h2>
           </a>
         </div>
-        <div class="col-xs-6 col-sm-3 home-service">
+        <div class="col-xs-6 col-sm-2 home-service">
           <a href="services#laundry">
-            <img src="img/laundry.png" alt="Laundry">
+            <img src="img/laundry.png" class="wow rotateIn" alt="Laundry">
             <h2>Laundry</h2>
           </a>
         </div>
-        <div class="col-xs-6 col-sm-3 home-service">
+        <div class="col-xs-4 col-sm-2 home-service">
           <a href="services#wedding">
-            <img src="img/wedding.png" alt="Wedding & Formal">
+            <img src="img/wedding.png" class="wow rotateIn" alt="Wedding & Formal">
             <h2>Wedding & Formal</h2>
           </a>
         </div>
-        <div class="col-xs-6 col-sm-3 home-service">
+        <div class="col-xs-4 col-sm-2 home-service">
           <a href="services#household">
-            <img src="img/household.png" alt="Household">
+            <img src="img/household.png" class="wow rotateIn" alt="Household">
             <h2>Household</h2>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 home-service">
+          <a href="services#other">
+            <img src="img/more.png" class="wow rotateIn" alt="More">
+            <h2>& So Much More!</h2>
           </a>
         </div>
       </div>
@@ -102,7 +112,7 @@
 
     <div class="container-fluid parallax parallax-1" id="choose-us-bg">
       <div class="row">
-        <div class="col-xs-12 col-sm-5">
+        <div class="col-xs-12 col-sm-5 wow bounceIn">
           <h1>Why</h1>
           <h2>choose us?</h2>
         </div>
@@ -122,23 +132,23 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/owners.jpg" class="img-responsive" alt="The Owners" />
+          <img src="img/owners.jpg" class="img-responsive img-rounded" alt="The Owners" />
           <h3>Keith & Diana Caddell</h3>
           <em>the owners</em>
           <p>Lemon drops jujubes chocolate cake lollipop chupa chups pie.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/counter.jpg" class="img-responsive" alt="Counter Clerks" />
+          <img src="img/counter.jpg" class="img-responsive img-rounded" alt="Counter Clerks" />
           <h3>Counter Clerks</h3>
           <p>Lemon drops jujubes chocolate cake lollipop chupa chups pie jujubes. Candy canes sugar plum gingerbread.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/drivers.jpg" class="img-responsive" alt="Delivery Drivers" />
+          <img src="img/drivers.jpg" class="img-responsive img-rounded" alt="Delivery Drivers" />
           <h3>Delivery Drivers</h3>
           <p>Candy canes sugar plum gingerbread. Sugar plum donut bear claw pastry toffee donut cookie pudding. </p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img src="img/behindthescenes.jpg" class="img-responsive" alt="Behind the Scenes" />
+          <img src="img/behindthescenes.jpg" class="img-responsive img-rounded" alt="Behind the Scenes" />
           <h3>Behind the Scenes</h3>
           <p>Sugar plum donut bear claw pastry toffee donut cookie pudding. Candy canes sugar plum gingerbread. </p>
         </div>
@@ -162,8 +172,9 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
