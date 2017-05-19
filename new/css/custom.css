@@ -1,0 +1,152 @@
+
+/*Home Intro*/
+
+.row.fw-row .v-box-wrap .v-box-inner {
+    padding: 12%;
+}
+
+.row.fw-row .v-box-wrap .v-box-inner.no-padding {
+    padding: 0%;
+}
+
+.row.fw-row .v-box-wrap .col-sm-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*End Home Intro*/
+
+
+.ui-widget-content a {
+    color: #333333;
+}
+
+.ui-widget-content a:hover {
+    color: #1dc6df;
+}
+
+    /*Custom Size*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1100px;
+    }
+}
+@media only screen and (min-width: 1250px) {
+    body.boxed-layout {
+        width: 1140px;
+    }
+
+        body.boxed-layout header {
+            max-width: 1140px;
+        }
+
+}
+
+.v-container{
+    padding-top:70px !important;
+    padding-bottom:70px !important;
+}
+
+.v-container-2x{
+    padding-top:100px !important;
+    padding-bottom:100px !important;
+}
+
+
+#home .tp-caption {
+  text-shadow: 1px 1px 2px black;
+}
+
+header .logo img {
+  max-width: 200px;
+}
+
+#delivery h6 {
+  text-shadow: 0px 0px 15px #6eea8c;
+  margin-top: -8px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#delivery .v-smash-text-large-2x {
+  color: white;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+
+#coupon-img {
+  width: 250px;
+  height: auto;
+}
+
+.item.horizontal {
+  width: 210%;
+}
+
+.owl-item {
+  overflow: hidden;
+}
+
+#we-offer h6 {
+  font-weight: bold;
+}
+
+#map-pioneer, #map-rebecca {
+  height: 275px;
+}
+
+#map-pioneer {
+  border-right: 1px solid white;
+}
+
+#map-rebecca {
+  border-left: 1px solid white;
+}
+
+.pioneer-container, .rebecca-container  {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pioneer-container {
+  text-align: right;
+}
+
+.pioneer-container .lead {
+  color: #868686;
+  text-align: center;
+  margin-left: 50%;
+}
+.rebecca-container .lead {
+  color: #868686;
+  text-align: center;
+  margin-right: 50%;
+}
+
+.pioneer-container .lead span, .rebecca-container .lead span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#map-pioneer, #map-rebecca {
+  border-top: 1px dotted #868686;
+  border-bottom: 1px dotted #868686;
+}
+
+#map-rebecca {
+  border-left: 1px dotted #868686;
+}
+
+#contact-us.v-bg-stylish.v-parallax {
+
+}
+
+#delivery .v-smash-text-large-2x {
+  text-shadow: 1px 1px 1px black, 1px 1px 2px black;
+}
+
+#services {
+  padding-top: 80px;
+}
